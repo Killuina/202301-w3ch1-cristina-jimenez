@@ -28,4 +28,4 @@ class Character implements CharacterStructure {
   }
 }
 
-export default Character;
+export { Character, type CharacterDataStructure, type CharacterStructure };

@@ -27,3 +27,5 @@ class Character implements CharacterStructure {
     this.isAlive = false;
   }
 }
+
+export default Character;

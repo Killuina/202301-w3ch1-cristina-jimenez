@@ -1,4 +1,4 @@
-import { Character } from "../Character/Character";
+import Character from "../Character/Character";
 import { type CharacterDataStructure } from "../Character/types";
 import { type FighterStructure } from "./types";
 

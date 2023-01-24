@@ -1,14 +1,7 @@
-import {
-  Character,
-  type CharacterStructure,
-  type CharacterDataStructure,
-} from "../Character/Character";
+import { Character } from "../Character/Character";
+import { type CharacterDataStructure } from "../Character/types";
 import Fighter from "../Fighter/Fighter";
-
-interface SquireStructure extends CharacterStructure {
-  serves: Fighter;
-  kissAssLevel: number;
-}
+import { type SquireStructure } from "./types";
 
 class Squire extends Character implements SquireStructure {
   constructor(

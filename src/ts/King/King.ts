@@ -1,10 +1,6 @@
 import { Character } from "../Character/Character";
-import { type CharacterDataStructure } from "../Character/Character";
-import { type CharacterStructure } from "../Character/Character";
-
-interface KingStructure extends CharacterStructure {
-  yearsOfReign: number;
-}
+import { type CharacterDataStructure } from "../Character/types";
+import { type KingStructure } from "./types";
 
 class King extends Character implements KingStructure {
   constructor(

@@ -7,45 +7,41 @@ import Fighter from "./Fighter/Fighter";
 import King from "./King/King";
 import Squire from "./Squire/Squire";
 
-import bronnImage from "../img/bronn.jpg";
-import daenerysImage from "../img/daenerys.jpg";
-import jaimeImage from "../img/jaime.jpg";
-import joffreyImage from "../img/joffrey.jpg";
-import tyrionImage from "../img/tyrion.jpg";
+import CardBody from "./CardBody/CardBody";
 
 const joffreyData: CharacterDataStructure = {
   name: "Joffrey",
   family: "Baratheon",
   age: 16,
-  imageSource: String(joffreyImage),
+  imageSource: "../img/joffrey.jpg",
 };
 
 const jaimeData: CharacterDataStructure = {
   name: "Jaime",
   family: "Lannister",
   age: 45,
-  imageSource: String(jaimeImage),
+  imageSource: "../img/jaime.jpg",
 };
 
 const daeneryseData: CharacterDataStructure = {
   name: "Daenerys",
   family: "Targaryen",
   age: 30,
-  imageSource: String(daenerysImage),
+  imageSource: "../img/daenerys.jpg",
 };
 
 const tyrionData: CharacterDataStructure = {
   name: "Tyrion",
   family: "Lannister",
   age: 40,
-  imageSource: String(tyrionImage),
+  imageSource: "../img/tyrion.jpg",
 };
 
 const bronnData: CharacterDataStructure = {
   name: "Bronn",
   family: "Blackwater",
   age: 54,
-  imageSource: String(bronnImage),
+  imageSource: "../img/bronn.jpg",
 };
 
 export const joffrey: King = new King(joffreyData, 2);
@@ -68,5 +64,4 @@ const characterCol = new Component(
 );
 
 const joffreyCard = new CardComponent(characterCol.element, joffrey);
-
-console.log(joffrey);
+const joffreyCardBody = new CardBody(joffreyCard.element, joffrey);

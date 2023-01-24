@@ -1,12 +1,6 @@
-import {
-  Character,
-  type CharacterDataStructure,
-  type CharacterStructure,
-} from "../Character/Character";
+import { Character, type CharacterDataStructure } from "../Character/Character";
+import { type AdvisorStructre } from "./types";
 
-interface AdvisorStructre extends CharacterStructure {
-  advises: Character;
-}
 class Advisor extends Character implements AdvisorStructre {
   constructor(
     characterData: CharacterDataStructure,

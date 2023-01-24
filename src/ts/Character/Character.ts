@@ -1,17 +1,4 @@
-interface CharacterDataStructure {
-  name: string;
-  family: string;
-  age: number;
-  imageSource: string;
-}
-
-interface CharacterStructure {
-  characterData: CharacterDataStructure;
-  isAlive: boolean;
-  series: string;
-  communicate: () => string;
-  die: () => void;
-}
+import { type CharacterDataStructure, type CharacterStructure } from "./types";
 
 class Character implements CharacterStructure {
   public isAlive = true;

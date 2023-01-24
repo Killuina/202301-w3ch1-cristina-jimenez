@@ -1,13 +1,6 @@
-import {
-  Character,
-  type CharacterDataStructure,
-  type CharacterStructure,
-} from "../Character/Character";
-
-interface FighterStructure extends CharacterStructure {
-  weapon: string;
-  dexterity: number;
-}
+import { Character } from "../Character/Character";
+import { type CharacterDataStructure } from "../Character/types";
+import { type FighterStructure } from "./types";
 
 class Fighter extends Character implements FighterStructure {
   constructor(

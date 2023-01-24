@@ -1,4 +1,5 @@
-import { type CharacterDataStructure, type CharacterStructure } from "./types";
+import { type CharacterDataStructure } from "./types";
+import { type CharacterStructure } from "./types";
 
 class Character implements CharacterStructure {
   public isAlive = true;
@@ -15,4 +16,4 @@ class Character implements CharacterStructure {
   }
 }
 
-export { Character, type CharacterDataStructure, type CharacterStructure };
+export default Character;

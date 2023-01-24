@@ -1,4 +1,5 @@
-import { Character, type CharacterDataStructure } from "../Character/Character";
+import Character from "../Character/Character";
+import { type CharacterDataStructure } from "../Character/types";
 import { type AdvisorStructre } from "./types";
 
 class Advisor extends Character implements AdvisorStructre {
